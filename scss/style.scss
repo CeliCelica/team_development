@@ -1,27 +1,33 @@
 @charset "utf-8";
 // base
-@use "./foundation/_reset";
-@use "./foundation/_base";
-@use "./foundation/index" as *;
+@use "foundation/_reset";
+@use "foundation/_base";
+@use "foundation/index" as *;
+@use "foundation/mixin" as *;
+@use "foundation/reset" as *;
 
 // layout
-@use "./layout/main";
+@use "layout/main" as *;
+@use "layout/hedder" as *;
+@use "layout/footer" as *;
 
 // component
-@use "./object/component/title";
-@use "./object/component/button";
+@use "object/component/title";
+@use "object/component/button";
+@use "object/component/text";
 
 // project
-@use "./object/project/contact";
-@use "./object/project/form";
-@use "./object/project/mainvisial";
-@use "./object/project/list";
-@use "./object/project/service";
-@use "./object/project/profile";
-@use "./object/project/works";
-@use "./object/project/card";
-@use "./object/project/header";
-@use "./object/project/footer";
+@use "object/project/contact";
+@use "object/project/form";
+@use "object/project/mainvisial";
+@use "object/project/list";
+@use "object/project/service";
+@use "object/project/profile";
+@use "object/project/works";
+@use "object/project/card";
+@use "object/project/header" as *;
+@use "object/project/footer" as *;
+@use "object/project/main" as *;
 
 // utility
 // @use "./object/utility/margin";

@@ -1,0 +1,29 @@
+@charset "utf-8";
+// base
+@use "./foundation/_reset";
+@use "./foundation/_base";
+@use "./foundation/index" as *;
+
+// layout
+@use "./layout/main";
+
+// component
+@use "./object/component/title";
+@use "./object/component/button";
+
+// project
+@use "./object/project/contact";
+@use "./object/project/form";
+@use "./object/project/mainvisial";
+@use "./object/project/list";
+@use "./object/project/service";
+@use "./object/project/profile";
+@use "./object/project/works";
+@use "./object/project/card";
+@use "./object/project/header";
+@use "./object/project/footer";
+
+// utility
+// @use "./object/utility/margin";
+
+

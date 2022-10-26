@@ -1,0 +1,12 @@
+.p-slider {
+  width: 100%;
+  height: 100%;
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.p-slider__list + .p-slider__list {
+  margin-left: 20px;
+}

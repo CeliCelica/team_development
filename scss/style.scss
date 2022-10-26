@@ -10,11 +10,13 @@
 @use "layout/main" as *;
 @use "layout/hedder" as *;
 @use "layout/footer" as *;
+@use "layout/feature" as *;
 
 // component
 @use "object/component/title";
 @use "object/component/button";
 @use "object/component/text";
+@use "object/component/card" as *;
 
 // project
 @use "object/project/contact";
@@ -24,6 +26,7 @@
 @use "object/project/service";
 @use "object/project/profile";
 @use "object/project/works";
+@use "object/project/item";
 @use "object/project/card";
 @use "object/project/header" as *;
 @use "object/project/footer" as *;

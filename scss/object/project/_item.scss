@@ -1,0 +1,11 @@
+.p-item {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .c-text {
+    margin-bottom: 20px;
+    &__date {
+      text-align: right;
+    }
+  }
+}

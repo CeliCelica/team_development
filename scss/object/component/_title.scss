@@ -1,2 +1,10 @@
 @use "../../foundation/index" as *;
 
+.c-title {
+  &__section {
+    font-weight: $bold;
+    font-size: $second;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

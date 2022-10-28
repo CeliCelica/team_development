@@ -1,0 +1,19 @@
+@use "../../foundation/index" as *;
+
+.c-card {
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px 4px #ccc;
+  &__contents {
+    padding: 30px;
+  }
+  &__category {
+    font-size: $Small;
+    margin-bottom: 20px;
+    display: block;
+  }
+  &__img {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}

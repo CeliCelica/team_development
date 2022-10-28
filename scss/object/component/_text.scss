@@ -2,4 +2,8 @@
 
 .c-text {
   font-size: $Text;
+  font-weight: $Bold;
+  &__date {
+    font-size: $Small;
+  }
 }

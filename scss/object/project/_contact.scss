@@ -1,2 +1,37 @@
 @use "../../foundation/index" as *;
 
+.p-contact {
+    color: #fff;
+    background-color: #121212;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    padding: 50px 0;
+    &__title {
+        font-size: 2.25rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__content {
+        width: 100%;
+        padding: 0 16px;
+        margin: 0 auto;
+        @include tab {
+            max-width: 1240px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__textBox, &__form {
+        width: 100%;
+        margin: 0 auto;
+        @include tab {
+            width: 45%;
+        }
+
+    }
+    &__text {
+        &--01, &--02, &--03 {
+            margin-bottom: 30px;
+        }
+    }
+}

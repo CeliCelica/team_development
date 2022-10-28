@@ -1,2 +1,109 @@
 @use "../../foundation/index" as *;
 
+.p-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px 40px;
+    background-color: #fff;
+    z-index: 10;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    &__nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        color: #fff;
+        background-color: #121212;
+        padding: 60px 25px;
+        transition: all .5s;
+        z-index: 20;
+    }
+    &__button {
+        position: relative;
+        top: 6px;
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+        appearance: none;
+        z-index: 20;
+        span {
+            display: inline-block;
+            transition: all .4s;
+            box-sizing: border-box;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            &:nth-of-type(1) {
+                top: 4px;
+            }
+            &:nth-of-type(2) {
+                top: 14px;
+            }
+            &:nth-of-type(3) {
+                bottom: 4px;
+            }
+        }
+    }
+    &__list {
+        &--01 {
+            margin-bottom: 60px;
+        }
+    }
+    &__contents {
+        width: 250px;
+        padding: 20px 0;
+        border-bottom: solid 1px #fff;
+        &--01 {
+            border-top: solid 1px #fff;
+        }
+    }
+    &__sns {
+        padding: 5px 0;
+    }
+    &__blackBack {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .6s;
+        cursor: pointer;
+    }
+}
+.active {
+    .p-header {
+        &__nav {
+            left: 0;
+            opacity: 1;
+        }
+        &__button {
+            span {
+                background-color: #fff;
+                &:nth-of-type(1) {
+                    transform: translateY(11px) rotate(-315deg);
+                }
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+                &:nth-of-type(3) {
+                    transform: translateY(-11px) rotate(315deg);
+                }
+            }
+        }
+        &__blackBack {
+            opacity: 0.8;
+            visibility: visible;
+        }
+    }
+}

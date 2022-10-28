@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>チーム開発</title>
+    <title>Sneakers</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="l-header p-header">
+        <h1><a href="#"><img src="../img/logo.svg" alt="Sneakers"></a></h1>
+        <button class="p-header__button" id="js-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="p-header__nav">
+            <ul class="p-header__list--01">
+                <li class="p-header__contents p-header__contents--01"><a href="#">PICK UP</a></li>
+                <li class="p-header__contents"><a href="#">FEATURE</a></li>
+                <li class="p-header__contents"><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="p-header__list--02">
+                <li class="p-header__sns"><a href="#">Twitter</a></li>
+                <li class="p-header__sns"><a href="#">facebook</a></li>
+                <li class="p-header__sns"><a href="#">instagram</a></li>
+            </ul>
+        </nav>
+        <div class="p-header__blackBack" id="js-blackBack"></div>
     </header>
     <main>
         <section class="p-mainvisual" id="video">
-            <video src="video/video.mp4" class="p-mainvisual__video"  autoplay loop muted playsinline></video>
+            <!-- <video src="video/video.mp4" class="p-mainvisual__video"  autoplay loop muted playsinline></video> -->
         </section>
         <section class="p-pickup">
             <h2>PICK UP</h2>
@@ -162,8 +181,22 @@
                 </li>
             </ul>
         </section>
+        <section class="p-contact">
+            <h2 class="p-contact__title">CONTACT</h2>
+            <div class="p-contact__content">
+                <div class="p-contact__textBox">
+                    <p class="p-contact__text--01">テキストテキストテキスト</p>
+                    <p class="p-contact__text--02">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="p-contact__text--03">テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="p-contact__form">
+                    <p>ふぉーむはプラグインで実装しまする</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="l-footer p-footer">
+        <p><small>&copy;&nbsp;Sneakers</small></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

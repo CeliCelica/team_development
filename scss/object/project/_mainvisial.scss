@@ -1,1 +1,9 @@
 @use "../../foundation/index" as *;
+
+.p-mainvisual {
+  width: 100%;
+  height: auto;
+  &__video {
+    object-fit: contain;
+  }
+}

@@ -36,7 +36,7 @@
     </header>
     <main>
         <section class="p-mainvisual" id="video">
-            <video src="video/video.mp4" class="p-mainvisual__video"  autoplay loop muted playsinline></video>
+            <!-- <video src="video/video.mp4" class="p-mainvisual__video"  autoplay loop muted playsinline></video> -->
         </section>
         <section class="p-pickup">
             <h2 class="c-title__section">PICK UP</h2>

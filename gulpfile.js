@@ -30,7 +30,7 @@ outputStyle: 'expanded' //expanded, nested, campact, compressedから選択
 cascade: false}
 ) ]) )
 .pipe( postcss([ cssdeclsort({ order: 'alphabetical' }) ]) )//プロパティをソートし直す(アルファベット順)
-.pipe(gulp.dest('./src/css'));//コンパイル後の出力先
+.pipe(gulp.dest('./css'));//コンパイル後の出力先
 });
 // 保存時のリロード
 gulp.task( 'browser-sync', function(done) {

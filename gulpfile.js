@@ -4,7 +4,7 @@ import gulpSass from 'gulp-sass';
 const sass = gulpSass( dartSass );
 import plumber  from 'gulp-plumber'; //エラー時の強制終了を防止
 import notify  from 'gulp-notify'; //エラー発生時にデスクトップ通知する
-import sassGlob  from 'gulp-sass-glob'; //@importの記述を簡潔にする
+import sassGlob  from 'gulp-sass-glob-use-forward'; //@importの記述を簡潔にする(※gulp-sass-glob→gulp-sass-glob-use-forwardにした)
 import browserSync  from  'browser-sync' ; //ブラウザ反映
 import postcss  from 'gulp-postcss'; //autoprefixerとセット
 import autoprefixer  from 'autoprefixer'; //ベンダープレフィックス付与

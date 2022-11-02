@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* フォント */
+/* font-weight */
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
+  width: 100%;
+}
+
+p {
+  margin: unset;
+}
+
+/* フォント */
+/* font-weight */
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -403,50 +416,38 @@ th {
 
 /* フォント */
 /* font-weight */
-body {
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
-  width: 100%;
-}
-
-p {
-  margin: unset;
-}
-
-html {
-  background-color: aqua;
-  height: 100%;
-  width: auto;
-}
-
-.l-header {
-  width: 100%;
-}
-
-.l-footer {
-  width: 100%;
-}
-
+/* フォント */
+/* font-weight */
 .l-feature {
   margin: -50px auto 10px auto;
   max-width: 1240px;
   padding: 100px 16px 50px 16px;
 }
 
-.c-title__section {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  text-align: center;
+/* フォント */
+/* font-weight */
+.l-footer {
+  width: 100%;
 }
 
-.c-text {
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-.c-text__date {
-  font-size: 0.75rem;
+/* フォント */
+/* font-weight */
+.l-header {
+  width: 100%;
 }
 
+/* フォント */
+/* font-weight */
+html {
+  background-color: pink;
+  height: 100%;
+  width: auto;
+}
+
+/* フォント */
+/* font-weight */
+/* フォント */
+/* font-weight */
 .c-card {
   -webkit-transition: all 0.3s ease;
   -webkit-box-shadow: 0 0 8px 4px #ccc;
@@ -469,6 +470,29 @@ html {
   object-position: 50% 50%;
 }
 
+/* フォント */
+/* font-weight */
+.c-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.c-text__date {
+  font-size: 0.75rem;
+}
+
+/* フォント */
+/* font-weight */
+.c-title__section {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* フォント */
+/* font-weight */
+/* フォント */
+/* font-weight */
 .p-contact {
   background-color: #121212;
   color: #fff;
@@ -510,49 +534,21 @@ html {
   margin-bottom: 30px;
 }
 
-.p-mainvisual {
-  height: auto;
-  width: 100%;
-}
-.p-mainvisual__video {
-  -o-object-fit: cover;
-  height: 100vh;
-  object-fit: cover;
-  width: 100%;
-}
-@media (min-width: 1025px) {
-  .p-mainvisual__video {
-    -o-object-fit: contain;
-    object-fit: contain;
-  }
+/* フォント */
+/* font-weight */
+.p-footer {
+  background-color: #121212;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  padding: 10px;
+  text-align: center;
 }
 
-.p-item {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.p-item .c-text {
-  margin-bottom: 20px;
-}
-.p-item .c-text__date {
-  text-align: right;
-}
-
-.p-slider {
-  height: 100%;
-  width: 100%;
-}
-.p-slider__img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
-}
-
-.p-slider__list + .p-slider__list {
-  margin-left: 20px;
-}
-
+/* フォント */
+/* font-weight */
+/* フォント */
+/* font-weight */
 .p-header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -666,11 +662,56 @@ html {
   visibility: visible;
 }
 
-.p-footer {
-  background-color: #121212;
-  color: #fff;
-  font-size: 0.75rem;
-  line-height: 1.7;
-  padding: 10px;
-  text-align: center;
+.p-item {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.p-item .c-text {
+  margin-bottom: 20px;
+}
+.p-item .c-text__date {
+  text-align: right;
+}
+
+/* フォント */
+/* font-weight */
+/* フォント */
+/* font-weight */
+.p-mainvisual {
+  height: auto;
+  width: 100%;
+}
+.p-mainvisual__video {
+  -o-object-fit: cover;
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+@media (min-width: 1025px) {
+  .p-mainvisual__video {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+/* フォント */
+/* font-weight */
+/* フォント */
+/* font-weight */
+.p-slider {
+  height: 100%;
+  width: 100%;
+}
+.p-slider__img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.p-slider__list + .p-slider__list {
+  margin-left: 20px;
+}
+
+/* フォント */
+/* font-weight */

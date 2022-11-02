@@ -1,27 +1,27 @@
 @charset "utf-8";
 // base
-@import "foundation/*";
+@forward "foundation/*";
 // @use "foundation/base" as *;
 // @use "foundation/index" as *;
 // @use "foundation/mixin" as *;
 // @use "foundation/reset" as *;
 
 // layout
-@import "layout/*";
+@forward "layout/*";
 // @use "layout/main" as *;
 // @use "layout/hedder" as *;
 // @use "layout/footer" as *;
 // @use "layout/feature" as *;
 
 // component
-@import "object/component/*";
+@forward "object/component/*";
 // @use "object/component/title";
 // @use "object/component/button";
 // @use "object/component/text";
 // @use "object/component/card" as *;
 
 // project
-@import "object/project/*";
+@forward "object/project/*";
 // @use "object/project/contact";
 // @use "object/project/form";
 // @use "object/project/mainvisial";
@@ -37,7 +37,7 @@
 // @use "object/project/main" as *;
 
 // utility
-@import "object/utility/*";
+@forward "object/utility/*";
 // @use "./object/utility/margin";
 
 

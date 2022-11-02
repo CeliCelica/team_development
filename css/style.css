@@ -10,8 +10,6 @@ p {
   margin: unset;
 }
 
-/* フォント */
-/* font-weight */
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -414,40 +412,26 @@ th {
   text-align: left;
 }
 
-/* フォント */
-/* font-weight */
-/* フォント */
-/* font-weight */
 .l-feature {
   margin: -50px auto 10px auto;
   max-width: 1240px;
   padding: 100px 16px 50px 16px;
 }
 
-/* フォント */
-/* font-weight */
 .l-footer {
   width: 100%;
 }
 
-/* フォント */
-/* font-weight */
 .l-header {
   width: 100%;
 }
 
-/* フォント */
-/* font-weight */
 html {
-  background-color: pink;
+  background-color: red;
   height: 100%;
   width: auto;
 }
 
-/* フォント */
-/* font-weight */
-/* フォント */
-/* font-weight */
 .c-card {
   -webkit-transition: all 0.3s ease;
   -webkit-box-shadow: 0 0 8px 4px #ccc;
@@ -470,8 +454,6 @@ html {
   object-position: 50% 50%;
 }
 
-/* フォント */
-/* font-weight */
 .c-text {
   font-size: 0.9rem;
   font-weight: 700;
@@ -480,8 +462,6 @@ html {
   font-size: 0.75rem;
 }
 
-/* フォント */
-/* font-weight */
 .c-title__section {
   font-size: 2.25rem;
   font-weight: 700;
@@ -489,10 +469,6 @@ html {
   text-align: center;
 }
 
-/* フォント */
-/* font-weight */
-/* フォント */
-/* font-weight */
 .p-contact {
   background-color: #121212;
   color: #fff;
@@ -534,8 +510,6 @@ html {
   margin-bottom: 30px;
 }
 
-/* フォント */
-/* font-weight */
 .p-footer {
   background-color: #121212;
   color: #fff;
@@ -545,10 +519,6 @@ html {
   text-align: center;
 }
 
-/* フォント */
-/* font-weight */
-/* フォント */
-/* font-weight */
 .p-header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -674,10 +644,6 @@ html {
   text-align: right;
 }
 
-/* フォント */
-/* font-weight */
-/* フォント */
-/* font-weight */
 .p-mainvisual {
   height: auto;
   width: 100%;
@@ -695,10 +661,6 @@ html {
   }
 }
 
-/* フォント */
-/* font-weight */
-/* フォント */
-/* font-weight */
 .p-slider {
   height: 100%;
   width: 100%;
@@ -712,6 +674,3 @@ html {
 .p-slider__list + .p-slider__list {
   margin-left: 20px;
 }
-
-/* フォント */
-/* font-weight */

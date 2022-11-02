@@ -70,14 +70,14 @@ gulp.task('default', gulp.series(gulp.parallel('browser-sync', 'watch')));
 var imageminOption = [
 optipng({ optimizationLevel: 5 }),
 mozjpeg({ quality: 85 }),
-imagemin.gifsicle({
-interlaced: false,
-optimizationLevel: 1,
-colors: 256
-}),
-imagemin.mozjpeg(),
-imagemin.optipng(),
-imagemin.svgo()
+// imagemin.gifsicle({
+// interlaced: false,
+// optimizationLevel: 1,
+// colors: 256
+// }),
+// imagemin.mozjpeg(),
+// imagemin.optipng(),
+// imagemin.svgo()
 ];
 // 画像の圧縮
 // $ gulp imageminで./src/img/base/フォルダ内の画像を圧縮し./src/img/フォルダへ

@@ -16,19 +16,3 @@ function add_files() {
 	}
 	}
 add_action('wp_enqueue_scripts', 'add_files');
-
-
-function init_scripts()
-{
-  // 管理画面以外
-  if (!is_admin()) {
-    // 標準jQueryを除外
-    wp_deregister_script('jquery');
-    // ダウンロードしてきたjQueryを読み込む
-    wp_enqueue_script(
-      'jquery-min',
-      "https://code.jquery.com/jquery-3.6.0.js"
-    );
-  }
-}
-add_action('wp_enqueue_scripts', 'init_scripts');

@@ -14,6 +14,15 @@ import optipng  from 'imagemin-optipng';
 import mozjpeg  from 'imagemin-mozjpeg';
 import ejs  from "gulp-ejs";
 import rename  from "gulp-rename"; //.ejsの拡張子を変更
+import minimist from "minimist";
+
+const options = minimist( process.argv.slice( 2 ), {
+  string: 'path',
+  default: {
+    path: 'teamdevelopment.local' // 引数の初期値
+  }
+});
+
 gulp.task('sass', function() {
 return gulp
 .src( './scss/**/*.scss' )
@@ -35,11 +44,9 @@ cascade: false}
 // 保存時のリロード
 gulp.task( 'browser-sync', function(done) {
 browserSync.init({
-//ローカル開発
-server: {
-baseDir: "./",
-index: "index.html"
-}
+  proxy: {
+    target: options.path
+  },
 });
 done();
 });

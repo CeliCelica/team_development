@@ -14,6 +14,15 @@ import optipng  from 'imagemin-optipng';
 import mozjpeg  from 'imagemin-mozjpeg';
 import ejs  from "gulp-ejs";
 import rename  from "gulp-rename"; //.ejsの拡張子を変更
+import minimist from "minimist";
+
+const options = minimist( process.argv.slice( 2 ), {
+  string: 'path',
+  default: {
+    path: 'teamdevelopment.local' // 引数の初期値
+  }
+});
+
 gulp.task('sass', function() {
 return gulp
 .src( './scss/**/*.scss' )
@@ -35,11 +44,9 @@ cascade: false}
 // 保存時のリロード
 gulp.task( 'browser-sync', function(done) {
 browserSync.init({
-//ローカル開発
-server: {
-baseDir: "./",
-index: "index.html"
-}
+  proxy: {
+    target: options.path
+  },
 });
 done();
 });
@@ -59,6 +66,8 @@ done();
 // 監視
 gulp.task( 'watch', function(done) {
 gulp.watch( './scss/**/*.scss', gulp.task('sass') ); //sassが更新されたらgulp sassを実行
+gulp.watch('**/*.html', gulp.task('bs-reload')); //htmlが更新されたらbs-reloadを実行
+gulp.watch('**/*.php', gulp.task('bs-reload')); //phpが更新されたらbs-reloadを実行
 gulp.watch('./scss/**/*.scss', gulp.task('bs-reload')); //sassが更新されたらbs-reloadを実行
 gulp.watch( './js/*.js', gulp.task('bs-reload') ); //jsが更新されたらbs-relaodを実行
 gulp.watch('./ejs/**/*.ejs',gulp.task('ejs') ) ; //ejsが更新されたらgulp-ejsを実行

@@ -1,5 +1,5 @@
 {
-  "name": "svg-animation-project",
+  "name": "team_development",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shunya929/SVG-animation.git"
+    "url": "git+https://github.com/Shunya929/team_development.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Shunya929/SVG-animation/issues"
+    "url": "https://github.com/Shunya929/team_development/issues"
   },
-  "homepage": "https://github.com/Shunya929/SVG-animation#readme",
+  "homepage": "https://github.com/Shunya929/team_development#readme",
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
@@ -26,6 +26,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-changed": "^4.0.3",
+    "gulp-connect-php": "^1.0.3",
     "gulp-ejs": "^5.1.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^4.0.0",
@@ -44,6 +45,7 @@
   "dependencies": {
     "c9": "^3.1.3534",
     "imagemin-svgo": "^10.0.1",
+    "minimist": "^1.2.7",
     "save": "^2.9.0"
   }
 }
